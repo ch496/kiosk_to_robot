@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1930</width>
+    <height>1022</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background: #000000;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="Error_code_text">
+    <property name="geometry">
+     <rect>
+      <x>1310</x>
+      <y>640</y>
+      <width>112</width>
+      <height>77</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>A004견출새내기</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #ffffff;</string>
+    </property>
+    <property name="text">
+     <string>Error</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Error_code">
+    <property name="geometry">
+     <rect>
+      <x>1120</x>
+      <y>770</y>
+      <width>491</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>A004견출새내기</family>
+      <pointsize>72</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #aa0000;
+background-color: #000000;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="waiting_operation_text">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>640</y>
+      <width>181</width>
+      <height>77</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>A004견출새내기</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #ffffff;</string>
+    </property>
+    <property name="text">
+     <string>남은 동작 수</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="waiting_operation">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>770</y>
+      <width>491</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>A004견출새내기</family>
+      <pointsize>72</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #aa55ff;
+background-color: #000000;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="robot_operation_process">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>10</y>
+      <width>181</width>
+      <height>77</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>A004견출새내기</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #ffffff;</string>
+    </property>
+    <property name="text">
+     <string>로봇 동작 과정</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="waiting_order_text">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>400</y>
+      <width>181</width>
+      <height>77</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>A004견출새내기</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #ffff00;</string>
+    </property>
+    <property name="text">
+     <string>주문 대기</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="order_waiting">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>220</y>
+      <width>171</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>A004견출새내기</family>
+      <pointsize>72</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #00aa00;
+background-color: #ffffff;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="pick_up_cup">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>220</y>
+      <width>171</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>A004견출새내기</family>
+      <pointsize>72</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #00aa00;
+background-color: #ffffff;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="pick_up_cup_text">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>400</y>
+      <width>181</width>
+      <height>77</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>A004견출새내기</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #ffff00;</string>
+    </property>
+    <property name="text">
+     <string>컵 뽑기</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="make_beverage">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>220</y>
+      <width>171</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>A004견출새내기</family>
+      <pointsize>72</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #00aa00;
+background-color: #ffffff;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="make_beverage_text">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>400</y>
+      <width>181</width>
+      <height>77</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>A004견출새내기</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #ffff00;</string>
+    </property>
+    <property name="text">
+     <string>음료 제조</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="outlet_to_beverage_text">
+    <property name="geometry">
+     <rect>
+      <x>1210</x>
+      <y>400</y>
+      <width>181</width>
+      <height>77</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>A004견출새내기</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #ffff00;</string>
+    </property>
+    <property name="text">
+     <string>음료 투출</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="outlet_to_beverage">
+    <property name="geometry">
+     <rect>
+      <x>1210</x>
+      <y>220</y>
+      <width>171</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>A004견출새내기</family>
+      <pointsize>72</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #00aa00;
+background-color: #ffffff;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="turn_outlet">
+    <property name="geometry">
+     <rect>
+      <x>1550</x>
+      <y>220</y>
+      <width>171</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>A004견출새내기</family>
+      <pointsize>72</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #00aa00;
+background-color: #ffffff;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="turn_outlet_text">
+    <property name="geometry">
+     <rect>
+      <x>1550</x>
+      <y>400</y>
+      <width>181</width>
+      <height>77</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>A004견출새내기</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #ffff00;</string>
+    </property>
+    <property name="text">
+     <string>회전판 회전</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1930</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
